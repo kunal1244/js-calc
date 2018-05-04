@@ -1,0 +1,43 @@
+<html>
+<head><title>A simple calculator
+</title>
+<script>
+
+function add(){
+	var a=document.getElementById("fnum").value;
+	var b=document.getElementById("snum").value;
+	var out=document.getElementById('res').value=parseInt(a)+parseInt(b);
+}
+function sub(){
+	var a=document.getElementById("fnum").value;
+	var b=document.getElementById("snum").value;
+	var out=document.getElementById('res').value=parseInt(a)-parseInt(b);
+}
+function mult(){
+	var a=document.getElementById("fnum").value;
+	var b=document.getElementById("snum").value;
+	var out=document.getElementById('res').value=parseInt(a)*parseInt(b);
+}
+function div(){
+	var a=document.getElementById("fnum").value;
+	var b=document.getElementById("snum").value;
+	var out=document.getElementById('res').value=parseInt(a)/parseInt(b);
+}
+
+
+</script>
+</head>
+<body>
+<form>
+First number:<input type="number" id="fnum" value="0">
+Second number:<input type="number" id="snum" value="0"></form>
+<button type="button" onclick="add()">+</button>
+<button type="button" onClick="sub()">-</button>
+<button type="button" onClick="mult()">*</button>
+<button type="button" onClick="div()">/</button>
+<br><br>
+Result:<input type="textbox" id="res">
+
+
+</body>
+</html>
